@@ -1,6 +1,6 @@
 streamlit==1.39
 ultralytics
-cv2
+opencv-python
 opencv-python-headless
 numpy
 PIL
