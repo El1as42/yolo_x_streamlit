@@ -7,7 +7,7 @@ from PIL import Image
 model = YOLO("yolov8n.pt")  # Ensure you have the right path and model
 
 # Streamlit app interface
-st.title("YOLOv8 Object Detection with Streamlit")
+st.title("YOLOv8 Object Detection")
 
 enable = st.checkbox("Enable camera")
 picture = st.camera_input("Take a picture", disabled=not enable)
