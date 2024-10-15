@@ -6,7 +6,8 @@ from PIL import Image
 
 model = YOLO("yolo11l.pt")  # This single parameter determines which yolo version and size is used
 
-st.title("YOLO11l Object Detection")
+st.title("YOLO11 Object Detection")
+st.write("Model size: Large")
 enable = st.checkbox("Enable camera")
 picture = st.camera_input("Take a picture", disabled=not enable)
 
@@ -16,7 +17,7 @@ if picture:
     # Convert to NumPy array (OpenCV format: BGR)
     image = np.array(image)  
 
-    st.write("Running YOLO11l object detection...")
+    st.write("Running YOLO11 object detection...")
     try:
         # Perform inference on the input image
         results = model(image)  
