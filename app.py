@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 
 
-model = YOLO("last.pt")  # This single parameter determines which yolo version and size is used
+model = YOLO("best2.pt")  # This single parameter determines which yolo version and size is used
 
 st.title("YOLO11 Object Detection")
 st.write("Model size: Large")
